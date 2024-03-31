@@ -1,0 +1,64 @@
+/* フォントの種類 */
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+}
+
+.google-fonts {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+html {
+  font-size: 20px; /* ルート要素のフォントサイズを20pxに設定 */
+}
+
+h1 {
+  font-size: 2em; /* 基本フォントサイズの2倍に設定 */
+}
+
+/* 全体のテキストを中央寄せにします */
+body {
+  text-align: center;
+}
+
+/* ブロック要素を中央寄せにします */
+.parent, h1, h2, p {
+  margin: 0 auto;
+  display: block;
+}
+
+.parent {
+  font-weight: bold;
+}
+
+.sky-blue {
+  color: skyblue; /* スカイブルーのキーワードを使用 */
+}
+
+.pink {
+  color: rgb(255, 192, 203); /* ピンクのRGB値を指定 */
+}
+
+/* 「名前」「血液型」「好きな食べ物」の見出しにピンクを適用 */
+h2.name, h2.blood-type, h2.favorite-food {
+  color: rgb(255, 192, 203);
+}
+
+/* 「生年月日」「趣味」「プログラミングを始めた理由」の見出しにスカイブルーを適用 */
+h2.birth-date, h2.hobby, h2.reason {
+  color: skyblue;
+}
+
+h1 {
+  letter-spacing: 1.2em; /* 文字の大きさの1.2倍に文字間隔を設定 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 影を追加 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 下に3pxの実線を追加、カラー指定 */
+  padding-bottom: 8px; /* 下線とテキストとの間隔を調整 */
+}
+
+body {
+  line-height: 2.0; /* フォントサイズの2.0倍の行間 */
+}
+
