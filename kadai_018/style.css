@@ -1,0 +1,79 @@
+#top {
+  width: 800px;
+  background-color: #dcc9f4;
+  margin: 20px auto; /* 上下の余白と中央配置 */
+  display: flex; /* p要素を横並びにする */
+  justify-content: center; /* 中央揃え */
+  padding: 20px 0; /* 上下の内側余白を追加 */
+}
+
+.top-child {
+  width: 20%; /* 親要素の20% */
+  background-color: #ffd9df;
+  text-align: center; /* 文字列を中央揃え */
+  margin: 0 10px; /* 左右の外側余白を追加、要素間のスペースを作る */
+  padding: 10px; /* 内側の余白を追加、コンテンツ周りのスペースを確保 */
+}
+
+/* ID名がmiddleのdiv要素に適用するスタイル */
+#middle {
+  position: relative; /* 子要素の配置の基準点 */
+  width: 800px;
+  height: 800px;
+  margin: 20px auto; /* 上下に20pxの余白を設け、左右は自動で中央揃え */
+  background-color: #ffd9df;
+}
+
+/* 子要素に適用する共通のスタイル */
+#middle-child01, #middle-child02, #middle-child03 {
+  position: absolute; /* 親要素に対して絶対位置で配置 */
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+}
+
+/* 各子要素の個別の位置設定 */
+#middle-child01 {
+  top: 100px; /* 親の上端から100pxの位置 */
+  left: 100px; /* 親の左端から100pxの位置 */
+}
+
+#middle-child02 {
+  top: 300px; /* 親の上端から300pxの位置 */
+  left: 300px; /* 親の左端から300pxの位置 */
+}
+
+#middle-child03 {
+  top: 500px; /* 親の上端から500pxの位置 */
+  left: 500px; /* 親の左端から500pxの位置 */
+}
+
+/* ID名がbottomに適用するスタイル */
+#bottom {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto; /* 画面の中央に配置 */
+  background-color: #87ceeb;
+  position: relative; /* 子要素の絶対位置指定の基準点となる */
+}
+
+/* ID名がbottom-child01、bottom-child02、bottom-child03に適用する共通のスタイル */
+#bottom-child01, #bottom-child02, #bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+  position: absolute; /* 親要素に対して絶対位置で配置 */
+}
+
+/* ID名がbottom-child02のスタイル調整 */
+#bottom-child02 {
+  left: 200px; /* 左に200pxずらす */
+  top: 100px; /* 親要素の上端からの距離 */
+}
+
+/* ID名がbottom-child03のスタイル調整 */
+#bottom-child03 {
+  left: 400px; /* 左に400pxずらす */
+  top: 200px; /* 親要素の上端からの距離 */
+}
+
